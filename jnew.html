@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrustFleet - home</title>
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="new.css">
+    <!-- responsive sheet -->
+     <link rel="stylesheet" href="./responsive.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Google font  Poppins-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Google font  Robboto-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Google font Oxanium -->
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- 1. Include Flatpickr CSS and JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+</head>
+
+
+<body>
+    <nav class="nav">
+        <div class="none">
+             <div class="title-2">MUHAMMAD UMAIR</div>
+            <div class="key-2">
+                <h3 class="typing-2"><span id="typed-v2"></span></h3>
+            </div>
+ 
+        </div>
+        <div class="displayre">
+            <div class="humburger2"><i class="fa-solid fa-bars"></i></div>
+            <div class="sun2"><i class="fa-solid fa-moon"></i></i></div>
+        </div>
+        
+        <ul>
+
+
+            <li><a href="#about" class="active"><i class="fa-solid fa-user"></i>About</a></li>
+            <li><a href="#work"><i class="fa-solid fa-briefcase"></i>Works</a></li>
+            <li><a href="#services"><i class="fa-solid fa-gear"></i>Services</a></li>
+            <li><a href="#resume"><i class="fa-solid fa-file"></i>Resume</a></li>
+            <li><a href="#skills"><i class="fa-solid fa-check-to-slot"></i>Skills</a></li>
+            <li><a href="#blog"><i class="fa-solid fa-book"></i>Blog</a></li>
+            <li><a href="#contact"><i class="fa-brands fa-airbnb"></i>Contact</a></li>
+
+        </ul>
+    </nav>
+    <div class="main-box">
+
+        <!-- ===== PROFILE BOX ===== -->
+        <div class="profile-box">
+            <div class="menu-icon">
+                <div><i class="fa-solid fa-bars"></i></div>
+                <div><a href="#" id="backch"><i class="fa-solid fa-star"></i></a></div>
+            </div>
+            <div class="image-container">
+                <img src="./image/profile-r38.jpg " alt="Profile Picture">
+            </div>
+            <div class="title">MUHAMMAD UMAIR</div>
+            <div class="key">
+                <h3 class="typing"><span id="typed"></span></h3>
+            </div>
+            <div class="links">
+                <a href=""><span><i class="fa-solid fa-moon"></i></span></a>
+                <a href=""><span><i class="fa-solid fa-sun"></i></span></a>
+                <a href=""><span><i class="fa-solid fa-star"></i></span></a>
+                <a href=""><span><i class="fa-solid fa-heart"></i></span></a>
+            </div>
+            <div class="cv"><a href="#cv">Download CV</a></div>
+        </div>
+    </div>
+
+    <div class="custom-box">
+
+        <!-- About Section -->
+        <section id="about" class="content-section active-section">
+            <div class="intro-text">
+                <h2 class="hello">Hello, I’m <span id="name-typed">Muhammad Umair</span></h2>
+                <h1 class="about-h1">
+                    <span>Artificial Intelligence and Machine Learning </span>
+                    <span class="change">Engineer</span>
+                    <span> Based in California, Los Angeles.</span>
+                </h1>
+                <div class="about-p">
+                    <p>With over 4 years of experience in developing and deploying machine learning models for
+                        fraud
+                        detection and platform safety. Skilled in data analysis, anomaly detection, and
+                        implementing
+                        scalable ML workflows. Proven ability to collaborate with cross-functional teams and
+                        mentor
+                        peers.</p>
+                </div>
+                <div class="about-end">
+                    <div class="box">
+                        <h6><span>8+</span></h6>
+                        <p><span>Years of <br> Experience</span></p>
+                    </div>
+                    <div class="box">
+                        <h6><span>96</span></h6>
+                        <p><span>Completed <br> projects</span></p>
+                    </div>
+                    <div class="box">
+                        <h6><span>10+</span></h6>
+                        <p><span>Awards <br> Winning</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Section -->
+        <section id="work" class="content-section">
+            <div class="contact-text">
+                <div class="works-text">
+                    <h2 class="works-title"><span>Portfolio</span></h2>
+                    <ul class="filter">
+                        <li class="active" data-filter="all">All</li>
+                        <li data-filter="website">Website</li>
+                        <li data-filter="software">Software</li>
+                        <li data-filter="generator">Generator</li>
+                        <li data-filter="app">App</li>
+                    </ul>
+
+                </div>
+                <div class="work-hr">
+                    <div>
+                        <hr>
+                    </div>
+                </div>
+                <div class="works-items" id="worksContainer">
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="content-section">
+            <div class="contact-text">
+                <div class="contact-h2">
+                    <h2 class="contact-title"><span>SERVICES</span></h2>
+                    <div>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="services-main">
+                    <div class="services-box" >
+                        <div class="img-serv">
+                            <div><img src="./image/serv-1g-184x184.png" alt="img"></div>
+                            <div>
+                                <div><span id="ser-text">4 Developers</span></div>
+                                <span class="ser-text">Artificial Intelligence for IT Operations</span>
+                            </div>
+                        </div>
+                        <div class="ser-p">
+                            <p>Artificial intelligence, machine learning, monitoring and big data analytics to
+                                automate. Detect, diagnose, and resolve issues more efficiently than traditional
+                                methods.</p>
+                            <span class="ser-end">Get Started</span>
+                        </div>
+                    </div>
+
+                    <div class="services-box">
+                        <div class="img-serv">
+                            <div><img src="./image/serv-1g-184x184.png" alt="img"></div>
+                            <div>
+                                <div><span id="ser-text">4 Developers</span></div>
+                                <span class="ser-text">Artificial Intelligence for IT Operations</span>
+                            </div>
+                        </div>
+                        <div class="ser-p">
+                            <p>Artificial intelligence, machine learning, monitoring and big data analytics to
+                                automate. Detect, diagnose, and resolve issues more efficiently than traditional
+                                methods.</p>
+                            <span class="ser-end">Get Started</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services-main">
+                    <div class="services-box">
+                        <div class="img-serv">
+                            <div><img src="./image/serv-1g-184x184.png" alt="img"></div>
+                            <div>
+                                <div><span id="ser-text">4 Developers</span></div>
+                                <span class="ser-text">Artificial Intelligence for IT Operations</span>
+                            </div>
+                        </div>
+                        <div class="ser-p">
+                            <p>Artificial intelligence, machine learning, monitoring and big data analytics to
+                                automate. Detect, diagnose, and resolve issues more efficiently than traditional
+                                methods.</p>
+                            <span class="ser-end">Get Started</span>
+                        </div>
+                    </div>
+
+                    <div class="services-box ">
+                        <div class="img-serv">
+                            <div><img src="./image/serv-1g-184x184.png" alt="img"></div>
+                            <div>
+                                <div><span id="ser-text">4 Developers</span></div>
+                                <span class="ser-text">Artificial Intelligence for IT Operations</span>
+                            </div>
+                        </div>
+                        <div class="ser-p">
+                            <p>Artificial intelligence, machine learning, monitoring and big data analytics to
+                                automate. Detect, diagnose, and resolve issues more efficiently than traditional
+                                methods.</p>
+                            <span class="ser-end">Get Started</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="Amazing">
+                    <div class="Pricing"><i aria-hidden="true" class="fas fa-hand-holding-usd"></i><span>Pricing</span>
+                    </div>
+                    <h3 class="amh3"><span class="amh3-span">Amazing Pricing For Your Projects</span></h3>
+                </div>
+                <div class="services-main">
+                    <div class="services-box ser2-bo">
+                        <div class="services-box2">
+                            <div class="name2">
+                                <div class="inner-per"><span> per day / 4 dev </span></div>
+                            </div>
+                            <div>
+                                <div class="amount"><span> $159 </span></div>
+                            </div>
+                            <a href="#" class="Order"><span> Order Now </span></a>
+                            <div class="bor-li">
+                                <ul>
+                                    <li>"Learning Engineer for Social Media."</li>
+                                    <li>"Generative AI Software Development."</li>
+                                    <li>"Artificial Intelligence for IT Operations."</li>
+                                    <li>"Customer Support Chatbot."</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services-box ser2-bo" >
+                        <div class="services-box2">
+                            <div class="name2">
+                                <div class="inner-per"><span> per day / 4 dev </span></div>
+                            </div>
+                            <div>
+                                <div class="amount"><span> $159 </span></div>
+                            </div>
+                            <a href="#" class="Order"><span> Order Now </span></a>
+                            <div class="bor-li">
+                                <ul>
+                                    <li>"Learning Engineer for Social Media."</li>
+                                    <li>"Generative AI Software Development."</li>
+                                    <li>"Artificial Intelligence for IT Operations."</li>
+                                    <li>"Customer Support Chatbot."</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="content-section">
+            <div class="contact-text">
+                <div class="contact-h2">
+                    <h2 class="contact-title"><span>Services</span> </h2>
+                    <div>
+                        <hr>
+                    </div>
+                </div>
+                <div class="resume-section">
+                    <h2 class="resume-title">MyResume</h2>
+                    <div class="resume-slider"> <!-- Slide 1 -->
+                        <div class="slide active">
+                            <h3>Experience</h3>
+                            <p>3+ years experience as a Machine Learning Engineer working on AI models.</p>
+                        </div> <!-- Slide 2 -->
+                        <div class="slide">
+                            <h3>Education</h3>
+                            <p>BS in Computer Science from XYZ University (Specialized in AI and Data Science).
+                            </p>
+                        </div> <!-- Slide 3 -->
+                        <div class="slide">
+                            <h3>Skills</h3>
+                            <p>Python, TensorFlow, Docker, Cloud Deployment, REST APIs.</p>
+                        </div> <!-- dots -->
+                        <div class="dots"> <span class="dot active" data-slide="0"></span> <span class="dot"
+                                data-slide="1"></span> <span class="dot" data-slide="2"></span> </div>
+                    </div>
+                </div>
+                <div class="ser-ed">
+                    <div class="ed-inner " id="ed-inner" ><i aria-hidden="true" class="fas fa-school"></i><span>Certifications</span>
+                    </div>
+                    <div class="ed-inner" id="displayno"><i aria-hidden="true"
+                            class="fas fa-school"></i><span>Certifications</span>
+                    </div>
+                </div>
+                <div class="ed-details">
+                    <div class="details-inner">
+                        <div class="de-bosex">
+                            <div class="ed-date">2019-2020</div>
+                            <div class="ed-tex-im">
+                                <div><span class="ed-tex-inner"> Bachelor of Computer Science </span></div>
+                                <!-- <div class="ed-img"><img src="./ed.png" alt="img"></div> -->
+                            </div>
+                            <div class="ed-span"><span> Carson, USA </span></div>
+                            <div class="ed-in-p"> Master of Science in Machine Learning and Artificial
+                                Intelligence.
+                                Minors in Data
+                                Structures and Algorithm Design.</div>
+
+                            <div class="ed-anker"><a href="#"></a><span class="text"> Computer Science </span>
+                            </div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="de-bosex">
+                            <div class="ed-date">2019-2020</div>
+                            <div class="ed-tex-im">
+                                <div><span class="ed-tex-inner"> Bachelor of Computer Science </span></div>
+                                <div class="ed-img"><img src="./image/ed.png" alt="img"></div>
+                            </div>
+                            <div class="ed-span"><span> Carson, USA </span></div>
+                            <div class="ed-in-p"> Master of Science in Machine Learning and Artificial
+                                Intelligence.
+                                Minors in Data
+                                Structures and Algorithm Design.</div>
+
+                            <div class="ed-anker"><a href="#"></a><span class="text"> Computer Science </span>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div class="details-inner">
+                        <div class="de-bosex">
+                            <div class="ed-date">2019-2020</div>
+                            <div class="ed-tex-im">
+                                <div><span class="ed-tex-inner"> Bachelor of <br> Computer Science </span></div>
+                                <!-- <div class="ed-img"><img src="./ed.png" alt="img"></div> -->
+                            </div>
+                            <div class="ed-span"><span> Carson, USA </span></div>
+                            <div class="ed-in-p"> Master of Science in Machine Learning and Artificial
+                                Intelligence.
+                                Minors in Data
+                                Structures and Algorithm Design.</div>
+
+                            <div class="ed-anker"><a href="#"></a><span class="text"> Computer Science </span>
+                            </div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="de-bosex">
+                            <div class="ed-date">2019-2020</div>
+                            <div class="ed-tex-im">
+                                <div><span class="ed-tex-inner"> Bachelor of Computer Science </span></div>
+                                <div class="ed-img"><img src="./image/ed.png" alt="img"></div>
+                            </div>
+                            <div class="ed-span"><span> Carson, USA </span></div>
+                            <div class="ed-in-p"> Master of Science in Machine Learning and Artificial
+                                Intelligence.
+                                Minors in Data
+                                Structures and Algorithm Design.</div>
+
+                            <div class="ed-anker"><a href="#"></a><span> Computer Science </span></div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Skills Section -->
+        <section id="skills" class="content-section">
+            <div class="contact-text">
+                <div class="contact-h2">
+                    <h2 class="contact-title"><span>Skills</span></h2>
+                    <div>
+                        <hr>
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skill-inner">
+                        <div class="skill-main">
+                            <div class="ed-date " id="ser-per">19%</div>
+                            <div class="skill">
+                                <div class="skill-img"><img src="./image/python-184x184.png" alt="img"></div>
+                                <div class="skill-text">Expert</div>
+                            </div>
+                            <div class="sill-line">
+                                <div class="inner-line"></div>
+                            </div>
+
+                        </div>
+                        <div class="skill-main" >
+                            <div class="ed-date " id="ser-per">19%</div>
+                            <div class="skill">
+                                <div class="skill-img"><img src="./image/python-184x184.png" alt="img"></div>
+                                <div class="skill-text">Expert</div>
+                            </div>
+                            <div class="sill-line">
+                                <div class="inner-line"></div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="skill-inner">
+                        <div class="skill-main">
+                            <div class="ed-date " id="ser-per">19%</div>
+                            <div class="skill">
+                                <div class="skill-img"><img src="./image/python-184x184.png" alt="img"></div>
+                                <div class="skill-text">Expert</div>
+                            </div>
+                            <div class="sill-line">
+                                <div class="inner-line"></div>
+                            </div>
+
+                        </div>
+                        <div class="skill-main">
+                            <div class="ed-date " id="ser-per">19%</div>
+                            <div class="skill">
+                                <div class="skill-img"><img src="./image/python-184x184.png" alt="img"></div>
+                                <div class="skill-text">Expert</div>
+                            </div>
+                            <div class="sill-line">
+                                <div class="inner-line"></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="ed-inner"><i aria-hidden="true" class="fas fa-school"></i><span>Tools &
+                        Platforms</span>
+                </div>
+                <div class="skill-container">
+                    <ul class="skill-ul">
+                        <li>
+                            <div class="circle">
+                                <div class="content">
+                                    <img src="./image/tensorflow-240-2.png" alt="TF" />
+                                    <div class="percent">90%</div>
+                                </div>
+                            </div>
+                            <div><span id="skill-s"> TensorFlow </span></div>
+                        </li>
+                        <li>
+                            <div class="circle">
+                                <div class="content">
+                                    <img src="./image/numpy-240.png" alt="TF" />
+                                    <div class="percent">90%</div>
+                                </div>
+                            </div>
+                            <div><span id="skill-s"> TensorFlow </span></div>
+                        </li>
+                        <li>
+                            <div class="circle">
+                                <div class="content">
+                                    <img src="./image/pytorch-240.png" alt="TF" />
+                                    <div class="percent">90%</div>
+                                </div>
+                            </div>
+                            <div><span id="skill-s"> TensorFlow </span></div>
+                        </li>
+                        <li>
+                            <div class="circle">
+                                <div class="content">
+                                    <img src="./image/azure.png" alt="TF" />
+                                    <div class="percent">90%</div>
+                                </div>
+                            </div>
+                            <div><span id="skill-s"> TensorFlow </span></div>
+                        </li>
+                        <li>
+                            <div class="circle">
+                                <div class="content">
+                                    <img src="./image/keras-240.png" alt="TF" />
+                                    <div class="percent">90%</div>
+                                </div>
+                            </div>
+                            <div><span id="skill-s"> TensorFlow </span></div>
+                        </li>
+                        <li>
+                            <div class="circle">
+                                <div class="content">
+                                    <img src="./image/visual-basic.png" alt="TF" />
+                                    <div class="percent">90%</div>
+                                </div>
+                            </div>
+                            <div><span id="skill-s"> TensorFlow </span></div>
+                        </li>
+                        </li>
+                        <li>
+                            <div class="circle">
+                                <div class="content">
+                                    <img src="./image/icons8-google-cloud-240.png" alt="TF" />
+                                    <div class="percent">90%</div>
+                                </div>
+                            </div>
+                            <div><span id="skill-s"> TensorFlow </span></div>
+                        </li>
+                        <li>
+                            <div class="circle">
+                                <div class="content">
+                                    <img src="./image/chatgpt.png" alt="TF" />
+                                    <div class="percent">90%</div>
+                                </div>
+                            </div>
+                            <div><span id="skill-s"> TensorFlow </span></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="content-section">
+            <div class="contact-text">
+                <div class="works-text">
+                    <h2 class="works-title"><span>Blog</span></h2>
+                    <ul class="filter blog-filter">
+                        <li class="active" data-filter="all">All</li>
+                        <li data-filter="tech">Tech</li>
+                        <li data-filter="design">Design</li>
+                        <li data-filter="tips">Tips</li>
+                    </ul>
+                </div>
+                <div class="work-hr">
+                    <div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+
+            <div class="works-items" id="blogContainer">
+                <!-- JS se dynamic content ayega -->
+            </div>
+        </section>
+
+        <!-- Contact Section  <div class="works-items" id="worksContainer">
+                <div class="work-item"><img id="img1" src="./work-1img.jpg"></div>
+                <div class="work-item"><img id="img2" src="./work-2img.jpg">
+
+
+
+                </div>
+            </div>-->
+        <section id="contact" class="content-section ">
+            <div class="contact-text">
+                <div class="contact-h2">
+                    <h2 class="contact-title"><span>Contact</span> </h2>
+                    <div>
+                        <hr>
+                    </div>
+                </div>
+                <div class="contact-sec" >
+                    <div class="second-box"><span class="second-inner"><i aria-hidden="true"
+                                class="far fa-address-book"></i>Phone:</span><span>(123) 456-7890</span></div>
+                    <div class="second-box"><span class="second-inner"><i aria-hidden="true"
+                                class="far fa-envelope"></i></span><span>m78075257@gmail.com</span></div>
+                </div>
+                <div class="contact-thi">
+                    <div class=""><span class="second-inner"><i aria-hidden="true" class="far fa-map"></i>Address</span>
+                    </div>
+                    <div class="webch"><span>Website:</span><span class="second-innerlast">www.yourwebsite.com</span></div>
+                </div>
+                <div class="contact-h2">
+                    <h2 class="contact-title same"><span>Let's make your project brilliant!</span> </h2>
+                </div>
+                <div class="contact-form">
+                    <form action="#">
+                        <div class="input-box">
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="input-box1">
+                            <textarea placeholder="Message" required></textarea>
+                        </div>
+                        <button class="btn" type="submit"><span>Send Message</span></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </div> <!-- end custom-box -->
+
+
+
+
+    </div>
+    <!-- ===== CONTENT BOX ===== -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

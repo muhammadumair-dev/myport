@@ -26,7 +26,7 @@ body {
   align-items: flex-start;
   min-height: 100vh;
   padding: 20px;
-  background-image: url(./bodyima.png);
+  background-image: url(./image/bodyima.png);
   background-repeat: no-repeat;
   background-size: cover;
   gap: 20px;
@@ -39,7 +39,7 @@ body {
   width: 30%;
   height: 85vh;
   border-radius: 20px;
-  padding: 30px;
+  padding: 0 20px;
   background-color: rgba(0, 0, 0, 0.555);
   border: 0.1px solid rgb(112, 103, 103);
   text-align: center;
@@ -129,26 +129,28 @@ body {
   padding-top: 10px;
   justify-self: center;
   width: 100%;
-  height: 42%;
+  height: 45%;
+  
 }
 
 .image-container img {
   width: 100%;
-  border-radius: 40px;
   height: 100%;
   border-radius: 15px;
   object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .menu-icon {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 0px;
   justify-self: center;
   color: #ffffff;
   width: 100%;
-  height: 65px;
+  height: 50px;
 }
 
 

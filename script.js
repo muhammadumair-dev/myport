@@ -398,5 +398,10 @@ setInterval(() => {
 
 // Start at first slide
 showSlide(0);
+const btn = document.getElementById("backch");
+
+btn.addEventListener("click", () => {
+  document.body.style.background = 'red';
+});
 
 
